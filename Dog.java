@@ -9,7 +9,7 @@ public class Dog{
     }
 
     public void puppy(){
-        while (this.size <= 3){
+        while (this.size <= 4){
             System.out.println("auau");
             this.size = this.size + 1;
             System.out.println(this.size);
@@ -17,7 +17,7 @@ public class Dog{
     }
 
     public void oldDog(){
-        if (this.size > 3){
+        if (this.size > 5){
             System.out.println("auuuuu");
         }
     }
