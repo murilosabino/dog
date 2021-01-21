@@ -1,14 +1,13 @@
 public class DogTestDrive {
     public static void main(String[] args) {
-        Dog tomy = new Dog();
-        tomy.name = "Tommy";
-        tomy.size = 1;
+        Dog one = new Dog("pug", "tommy");
+        one.size = 1;
 
-        System.out.println("o nome do cachorro é " + tomy.name + " e sua idade é " + tomy.size);
+        System.out.println("o nome do cachorro é " + one.name + " e sua idade é " + one.size);
 
-        tomy.puppy();
+        one.puppy();
 
-        tomy.oldDog();
+        one.oldDog();
         } 
     }
 

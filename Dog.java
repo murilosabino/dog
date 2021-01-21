@@ -1,8 +1,13 @@
 public class Dog{
 
     int size;
-    String breed;
+    String raca;
     String name;
+
+    public Dog(String b, String c){
+        raca = b;
+        name = c;
+    }
 
     public void bark(){
         System.out.println("au au");
