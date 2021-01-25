@@ -1,13 +1,27 @@
 public class DogTestDrive {
+
     public static void main(String[] args) {
-        Dog one = new Dog("pug", "tommy");
-        one.size = 1;
+        Dog one = new Dog();
+        one.setName("Tommy");
+        one.setAge(22);
 
-        System.out.println("o nome do cachorro é " + one.name + " e sua idade é " + one.size);
+        if(one.getAge()<0){
+            System.out.println("o nome do cachorro é " + one.getName() + " mas ele ainda nem nasceu" );
+        }
 
-        one.puppy();
+        else if(one.getAge()==1){
+            System.out.println("o nome do cachorro é " + one.getName() + " e sua idade é " + one.getAge() + 
+            " ano" );
+        }
 
-        one.oldDog();
+        else{
+            System.out.println("o nome do cachorro é " + one.getName() + " e sua idade é " + one.getAge() + 
+            " anos");
+            
+        }
+
+        one.imprime();
+       
         } 
     }
 

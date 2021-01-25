@@ -1,31 +1,46 @@
 public class Dog{
 
-    int size;
-    String raca;
-    String name;
+    private int age;
+    private String breed;
+    private String name;
 
-    public Dog(String b, String c){
-        raca = b;
-        name = c;
-    }
+    public void imprime(){
+        if(this.age >= 0){
+            while (this.age <= 4){
+                System.out.println("auau");
+                this.age = this.age + 1;
+                System.out.println(this.age);
+            }
 
-    public void bark(){
-        System.out.println("au au");
-    }
-
-    public void puppy(){
-        while (this.size <= 4){
-            System.out.println("auau");
-            this.size = this.size + 1;
-            System.out.println(this.size);
-        }
-    }
-
-    public void oldDog(){
-        if (this.size > 5){
+        if (this.age > 5){
             System.out.println("auuuuu");
         }
+        }    
+
+        
     }
+     // encapsulamento
+    public int getAge(){
+        return age;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getBreed(){
+        return breed;
+    }
+
+    public void setAge (int age){
+        this.age = age;
+    }
+
+    public void setName (String name){
+        this.name = name;
+    }
+
+
+
+
 
 }
 
